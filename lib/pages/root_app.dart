@@ -30,7 +30,7 @@ class _IndexedStackAppState extends State<IndexedStackApp> {
       title: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text('IndexedStackApp', style: TextStyle(color: Colors.white)),
+          Text('Instagram', style: TextStyle(color: Colors.white)),
           Row(
             children: List.generate(appBarIcons.length, (index) {
               return IconButton(
@@ -63,14 +63,17 @@ class _IndexedStackAppState extends State<IndexedStackApp> {
     ];
 
     return Container(
+
+      color: Colors.black,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 25.0),
         child: Container(
           width: size.width,
           height: 70.0,
           decoration: BoxDecoration(
             color: Colors.black,
             borderRadius: BorderRadius.circular(30.0),
+            border: Border.all(width: 0.1,color: Colors.white)
           ),
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -102,23 +105,27 @@ class _IndexedStackAppState extends State<IndexedStackApp> {
       index: pageIndex,
       children: [
         Container(
+          color: Colors.black,
           child: Center(
-            child: Text('Home Page'),
+            child: Text('Home Page',style: TextStyle(color: Colors.white,fontSize: 30),),
           ),
         ),
         Container(
+          color: Colors.black,
           child: Center(
-            child: Text('Search'),
+            child: Text('Search',style: TextStyle(color: Colors.white,fontSize: 30),),
           ),
         ),
         Container(
+          color: Colors.black,
           child: Center(
-            child: Text('Reels'),
+            child: Text('Reels',style: TextStyle(color: Colors.white,fontSize: 30),),
           ),
         ),
         Container(
+          color: Colors.black,
           child: Center(
-            child: Text('Shop'),
+            child: Text('Shop',style: TextStyle(color: Colors.white,fontSize: 30),),
           ),
         ),
       ],
