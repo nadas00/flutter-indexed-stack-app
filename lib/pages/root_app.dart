@@ -74,6 +74,30 @@ class _IndexedStackAppState extends State<IndexedStackApp> {
   }
 
   Widget getBody() {
-    return IndexedStack();
+    return IndexedStack(
+      index: pageIndex,
+      children: [
+        Container(
+          child: Center(
+            child: Text('Home Page'),
+          ),
+        ),
+        Container(
+          child: Center(
+            child: Text('Search'),
+          ),
+        ),
+        Container(
+          child: Center(
+            child: Text('Reels'),
+          ),
+        ),
+        Container(
+          child: Center(
+            child: Text('Shop'),
+          ),
+        ),
+      ],
+    );
   }
 }
