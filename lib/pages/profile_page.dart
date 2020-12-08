@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+
+class ProfilePage extends StatelessWidget {
+  const ProfilePage({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      color: Colors.black,
+      child: Center(
+        child: Text(
+          'Profile',
+          style: TextStyle(color: Colors.white, fontSize: 30),
+        ),
+      ),
+    );
+  }
+}
