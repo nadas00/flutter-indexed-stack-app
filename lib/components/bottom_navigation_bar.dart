@@ -22,7 +22,7 @@ Widget getNavBar(BuildContext context) {
   return Container(
     color: Colors.black,
     child: Padding(
-      padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 25.0),
+      padding: EdgeInsets.only(right: 15.0,left: 15.0, bottom: 20.0,top: 10),
       child: Container(
         width: size.width,
         height: 70.0,
