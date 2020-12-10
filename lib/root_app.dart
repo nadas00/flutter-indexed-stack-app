@@ -8,7 +8,7 @@ class IndexedStackApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
-      appBar: getAppBar(),
+      appBar: getAppBar(context),
       bottomNavigationBar: getNavBar(context),
       body: getBody(context),
     );

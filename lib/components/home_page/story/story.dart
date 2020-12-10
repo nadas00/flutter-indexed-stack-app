@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class StoryItem extends StatelessWidget {
   final String profilePicture;
   final String profileName;

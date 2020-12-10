@@ -1,0 +1,48 @@
+List explore = [
+  {
+    "exploreImage":
+        'https://media3.s-nbcnews.com/j/newscms/2019_41/3047866/191010-japan-stalker-mc-1121_06b4c20bbf96a51dc8663f334404a899.fit-760w.JPG'
+  },
+  {
+    "exploreImage":
+        'https://media.istockphoto.com/photos/child-hands-formig-heart-shape-picture-id951945718?k=6&m=951945718&s=612x612&w=0&h=ih-N7RytxrTfhDyvyTQCA5q5xKoJToKSYgdsJ_mHrv0='
+  },
+  {
+    "exploreImage":
+        'https://images.unsplash.com/photo-1494548162494-384bba4ab999?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NHx8fGVufDB8fHw%3D&w=1000&q=80'
+  },
+  {
+    "exploreImage":
+        'https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg'
+  },
+  {"exploreImage": 'https://cdn.eso.org/images/thumb300y/eso1322a.jpg'},
+  {
+    "exploreImage":
+        'https://imgd.aeplcdn.com/476x268/bw/models/royal-enfield-classic-350-single-channel-abs--bs-vi20200303121804.jpg?q=80'
+  },
+  {
+    "exploreImage":
+        'https://data.whicdn.com/images/351167498/original.jpg?t=1607177171'
+  },
+  {
+    "exploreImage":
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS92eisuWOx3tEjeW14mT9ACVgXDwIRBGtnww&usqp=CAU'
+  },
+  {
+    "exploreImage":
+        'https://static.toiimg.com/thumb/msid-58475411,width-748,height-499,resizemode=4,imgsize-142947/.jpg'
+  },
+  {
+    "exploreImage":
+        'https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg'
+  },
+  {"exploreImage": 'https://www.w3schools.com/w3images/lights.jpg'},
+  {
+    "exploreImage":
+        'https://www.traveller.com.au/content/dam/images/h/1/q/a/b/k/image.related.articleLeadwide.620x349.h1qyip.png/1600986508585.jpg'
+  },
+  {
+    "exploreImage":
+        'https://s23527.pcdn.co/wp-content/uploads/2020/01/100k-moon.jpg.optimal.jpg'
+  }
+];

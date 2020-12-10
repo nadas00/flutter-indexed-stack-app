@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tabview_with_custom_navbar/components/post/post_parts.dart';
+import 'package:tabview_with_custom_navbar/components/home_page/post/post_parts.dart';
 
 class Post extends StatelessWidget {
   final String profileName;

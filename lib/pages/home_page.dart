@@ -1,8 +1,6 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:tabview_with_custom_navbar/components/post/post.dart';
-import 'package:tabview_with_custom_navbar/components/post/post_parts.dart';
-import 'package:tabview_with_custom_navbar/components/story/story.dart';
+import 'package:tabview_with_custom_navbar/components/home_page/post/post.dart';
+import 'package:tabview_with_custom_navbar/components/home_page/story/story.dart';
 import 'package:tabview_with_custom_navbar/datas/posts.dart';
 import 'package:tabview_with_custom_navbar/datas/stories.dart';
 
@@ -56,6 +54,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
-
-
