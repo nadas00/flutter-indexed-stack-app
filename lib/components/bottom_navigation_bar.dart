@@ -10,6 +10,7 @@ Widget getNavBar(BuildContext context) {
     Icons.search,
     Icons.movie_filter_outlined,
     Icons.shopping_bag_outlined,
+    Icons.person_outline,
   ];
 
   List activeNavBarItems = [
@@ -17,6 +18,7 @@ Widget getNavBar(BuildContext context) {
     Icons.saved_search,
     Icons.movie_filter,
     Icons.shopping_bag,
+    Icons.person,
   ];
 
   return Container(
@@ -34,7 +36,7 @@ Widget getNavBar(BuildContext context) {
           padding: EdgeInsets.symmetric(horizontal: 20.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: List.generate(4, (index) {
+            children: List.generate(navBarItems.length, (index) {
               return IconButton(
                 icon: index == Provider.of<PageIndex>(context).pageIndex
                     ? Icon(activeNavBarItems[index])

@@ -1,6 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:tabview_with_custom_navbar/main.dart';
+
 
 Widget getAppBar(BuildContext context) {
   List appBarIcons = [
@@ -9,7 +11,8 @@ Widget getAppBar(BuildContext context) {
     Icons.chat_bubble_outline
   ];
 
-  if (Provider.of<PageIndex>(context).pageIndex == 0){
+  var currentPage = Provider.of<PageIndex>(context).pageIndex;
+  if (currentPage == 0) {
     return AppBar(
       backgroundColor: Colors.black,
       elevation: 0,
@@ -29,9 +32,27 @@ Widget getAppBar(BuildContext context) {
         ],
       ),
     );
-  }else{
-    return null;
   }
-
-
+  else if (currentPage == 4){
+    return AppBar(
+      backgroundColor: Colors.black,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(children: [
+            Text('hasanc35'),
+            Icon(Icons.keyboard_arrow_down)
+          ],),
+          Row(children: [
+            Icon(Icons.add,size: 30,),
+            SizedBox(width: 15,),
+            Icon(Icons.menu,size: 30,)
+          ],)
+        ],
+      ),
+    );
+  }
+  else{
+  return null;
+  }
 }

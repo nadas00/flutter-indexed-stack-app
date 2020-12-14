@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+import 'package:tabview_with_custom_navbar/components/profile_page/profile_info.dart';
+import 'package:tabview_with_custom_navbar/components/profile_page/profile_post.dart';
+import 'package:tabview_with_custom_navbar/components/profile_page/sticky_tab_bat.dart';
 
 class ProfilePage extends StatelessWidget {
   const ProfilePage({
@@ -7,14 +11,16 @@ class ProfilePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Colors.black,
-      child: Center(
-        child: Text(
-          'Profile',
-          style: TextStyle(color: Colors.white, fontSize: 30),
-        ),
-      ),
-    );
+    return DefaultTabController(
+        length: 2,
+        child: CustomScrollView(
+          slivers: [
+            ProfileInfo(),
+            //TabBar
+            StickyTabBar(),
+
+            ProfilePost()
+          ],
+        ));
   }
 }
