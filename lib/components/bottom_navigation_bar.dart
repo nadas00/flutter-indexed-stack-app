@@ -22,35 +22,30 @@ Widget getNavBar(BuildContext context) {
   ];
 
   return Container(
-    color: Colors.black,
+    height: 80.0,
+    decoration: BoxDecoration(
+        color: Colors.black,
+      border: Border(
+        top: BorderSide(color: Colors.white.withAlpha(50),width: 1)
+      )
+),
     child: Padding(
-      padding: EdgeInsets.only(right: 15.0,left: 15.0, bottom: 20.0,top: 10),
-      child: Container(
-        width: size.width,
-        height: 70.0,
-        decoration: BoxDecoration(
-            color: Colors.black,
-            borderRadius: BorderRadius.circular(30.0),
-            border: Border.all(width: 0.1, color: Colors.white)),
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: List.generate(navBarItems.length, (index) {
-              return IconButton(
-                icon: index == Provider.of<PageIndex>(context).pageIndex
-                    ? Icon(activeNavBarItems[index])
-                    : Icon(navBarItems[index]),
-                iconSize: 30.0,
-                color: Colors.white,
-                onPressed: () {
-                  Provider.of<PageIndex>(context, listen: false)
-                      .updatePageIndex(index);
-                },
-              );
-            }),
-          ),
-        ),
+      padding: EdgeInsets.only(right: 20.0,left: 20,bottom: 10),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: List.generate(navBarItems.length, (index) {
+          return IconButton(
+            icon: index == Provider.of<PageIndex>(context).pageIndex
+                ? Icon(activeNavBarItems[index])
+                : Icon(navBarItems[index]),
+            iconSize: 30.0,
+            color: Colors.white,
+            onPressed: () {
+              Provider.of<PageIndex>(context, listen: false)
+                  .updatePageIndex(index);
+            },
+          );
+        }),
       ),
     ),
   );
