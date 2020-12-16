@@ -12,7 +12,7 @@ Widget getAppBar(BuildContext context) {
   ];
 
   var currentPage = Provider.of<PageIndex>(context).pageIndex;
-  if (currentPage == 0) {
+   if (currentPage == 0) {
     return AppBar(
       backgroundColor: Colors.black,
       elevation: 0,
@@ -29,6 +29,23 @@ Widget getAppBar(BuildContext context) {
               );
             }),
           ),
+        ],
+      ),
+    );
+  }
+  else if (currentPage == 3) {
+    return AppBar(
+      backgroundColor: Colors.black,
+      elevation: 0,
+      title: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text('Mağaza', style: TextStyle(color: Colors.white)),
+          Row(
+              children: [
+                IconButton(icon: Icon(Icons.bookmarks_sharp), onPressed: (){}),
+                IconButton(icon: Icon(Icons.menu), onPressed: (){}),
+              ]),
         ],
       ),
     );
