@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:tabview_with_custom_navbar/components/search_page/explore.dart';
-import 'package:tabview_with_custom_navbar/components/search_page/explore_item.dart';
-import 'package:tabview_with_custom_navbar/datas/explore.dart';
 import 'package:tabview_with_custom_navbar/datas/marketItems.dart';
 import 'package:tabview_with_custom_navbar/datas/marketStories.dart';
-import 'package:tabview_with_custom_navbar/datas/posts.dart';
 
 class ShopPage extends StatelessWidget {
   const ShopPage({
@@ -53,13 +49,13 @@ class ShopPage extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                   child: Row(
                     children: List.generate(marketStories.length, (index) {
+                      var item = marketStories[index];
                       return Padding(
                         padding: EdgeInsets.only(left: 10.0),
                         child: MarketStory(
-                          marketStoryImage: marketStories[index]
-                              ['marketStoryImage'],
-                          marketStoryTitle: marketStories[index]
-                              ['marketStoryTitle'],
+                          marketStoryImage:
+                              item['marketStoryImage'],
+                          marketStoryTitle: item['marketStoryTitle'],
                         ),
                       );
                     }),

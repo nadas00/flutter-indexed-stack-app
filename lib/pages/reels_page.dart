@@ -28,16 +28,17 @@ class _ReelsPageState extends State<ReelsPage>
       child: TabBarView(
           controller: _reelsTabController,
           children: List.generate(reels.length, (index) {
+            var item = reels[index];
             return RotatedBox(
                 quarterTurns: -1,
                 child: ReelsItem(
-                  profileName: reels[index]['profileName'],
-                  reelsSound: reels[index]['reelsSound'],
-                  reelsContext: reels[index]['reelsContext'],
-                  likeCount: reels[index]['likeCount'],
-                  commentCount: reels[index]['commentCount'],
-                  reelsImage: reels[index]['reelsImage'],
-                  profileImage: reels[index]["profileImage"],
+                  profileName: item['profileName'],
+                  reelsSound: item['reelsSound'],
+                  reelsContext: item['reelsContext'],
+                  likeCount: item['likeCount'],
+                  commentCount: item['commentCount'],
+                  reelsImage: item['reelsImage'],
+                  profileImage: item["profileImage"],
                 ));
           })),
     );

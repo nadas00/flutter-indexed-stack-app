@@ -163,6 +163,7 @@ class ProfileInfo extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 10.0),
                 child: Row(
                     children: List.generate(stories.length, (index) {
+                      var item =  stories[index];
                       return Padding(
                         padding: const EdgeInsets.only(right: 20.0),
                         child: Container(
@@ -171,7 +172,7 @@ class ProfileInfo extends StatelessWidget {
                           decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: NetworkImage(
-                                    stories[index]['profilePicture']),
+                                   item['profilePicture']),
                                 fit: BoxFit.cover),
                             shape: BoxShape.circle,
                             color: Colors.white,

@@ -24,9 +24,10 @@ class HomePage extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 child: Row(
                     children: List.generate(stories.length, (index) {
+                  var item = stories[index];
                   return StoryItem(
-                    profileName: stories[index]["profileName"],
-                    profilePicture: stories[index]["profilePicture"],
+                    profileName: item["profileName"],
+                    profilePicture: item["profilePicture"],
                   );
                 })),
               ),
@@ -37,14 +38,15 @@ class HomePage extends StatelessWidget {
             //Post
             Column(
               children: List.generate(posts.length, (index) {
+                var item = posts[index];
                 return Post(
-                  profileName: posts[index]['profileName'],
-                  profileImage: posts[index]['profileImage'],
-                  postImage: posts[index]["postImage"],
-                  contextText: posts[index]['contextText'],
-                  timeAgo: posts[index]["timeAgo"],
-                  likeCount: posts[index]["likeCount"],
-                  commentCount: posts[index]["commentCount"],
+                  profileName: item['profileName'],
+                  profileImage: item['profileImage'],
+                  postImage: item["postImage"],
+                  contextText: item['contextText'],
+                  timeAgo: item["timeAgo"],
+                  likeCount: item["likeCount"],
+                  commentCount: item["commentCount"],
                 );
               }),
             )
